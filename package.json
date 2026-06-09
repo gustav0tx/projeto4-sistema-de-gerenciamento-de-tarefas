@@ -1,0 +1,27 @@
+{
+  "name": "projeto4-sistema-de-gerenciamento-de-tarefas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustav0tx/projeto4-sistema-de-gerenciamento-de-tarefas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gustav0tx/projeto4-sistema-de-gerenciamento-de-tarefas/issues"
+  },
+  "homepage": "https://github.com/gustav0tx/projeto4-sistema-de-gerenciamento-de-tarefas#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}

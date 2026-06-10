@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f3f6fb;
+  color: #111827;
+}
+
+.layout {
+  max-width: 1150px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #0002;
+}
+
+.topo-app {
+  background: linear-gradient(135deg, #1d72d2, #0052b3);
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.simbolo {
+  font-size: 34px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.conteudo {
+  padding: 35px;
+}
+
+.bloco-formulario {
+  padding: 28px;
+  margin-bottom: 42px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #0003;
+}
+
+.campo-area {
+  display: flex;
+  gap: 15px;
+}
+
+#campoTexto {
+  flex: 1;
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+button {
+  padding: 13px 26px;
+  border: 0;
+  border-radius: 6px;
+  background: #1d72d2;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #155cb0;
+}
+
+.linha-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dados {
+  display: flex;
+  gap: 18px;
+  font-size: 17px;
+}
+
+#valorTotal {
+  color: #1d72d2;
+}
+
+#valorPendentes {
+  color: #d97706;
+}
+
+#valorConcluidas {
+  color: #16a34a;
+}
+
+#areaLista {
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-tarefa {
+  padding: 22px 26px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-tarefa:last-child {
+  border-bottom: 0;
+}
+
+.esquerda-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  accent-color: #1d72d2;
+}
+
+.titulo-tarefa {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.titulo-tarefa.feita {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.direita-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.etiqueta {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.etiqueta.pendente {
+  color: #d97706;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+
+.etiqueta.concluida {
+  color: #16a34a;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.botao-remover {
+  background: white;
+  color: red;
+  border: 1px solid red;
+  padding: 10px 14px;
+}
+
+.botao-remover:hover {
+  background: #fee2e2;
+}
+
+.rodape {
+  text-align: center;
+  padding: 25px;
+  color: #374151;
+}
+
+@media (max-width: 700px) {
+  .campo-area,
+  .linha-titulo,
+  .dados,
+  .item-tarefa {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .direita-item {
+    justify-content: space-between;
+  }
+
+  button {
+    width: 100%;
+  }
+}
